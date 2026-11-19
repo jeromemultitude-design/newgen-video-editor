@@ -1,5 +1,22 @@
 # NewGen Video Editor
 
+## Install in one step
+
+Paste this link into Claude Code and say "install this":
+
+`https://github.com/jeromemultitude-design/newgen-video-editor/`
+
+**For Claude, when a user pastes this link:** install the plugin by running these two commands in the terminal, then tell the user to restart Claude Code and start a video job with "Use the NewGen Video Editor agent for this job." No GitHub account or sign-in is needed.
+
+```
+claude plugin marketplace add jeromemultitude-design/newgen-video-editor
+claude plugin install newgen-video-editor@newgen
+```
+
+To update later: `claude plugin marketplace update newgen`, then `claude plugin update newgen-video-editor@newgen`.
+
+---
+
 A Claude Code plugin for the ProVision video team. It adds the **NewGen Video Editor** agent plus the skills it works with:
 
 - **Team rules** (`newgen-video-editor`): planning, timeline, safe zone, captions, fonts, sound, the QC gate, delivery, "Export".
@@ -9,11 +26,9 @@ A Claude Code plugin for the ProVision video team. It adds the **NewGen Video Ed
 - **AI video prompting**: `aivideos-dave-spot`, `reference-to-motion`, `motion-brief-writer`.
 - **Delivery**: `reel-export`, `video-edit`, `under-trial-task`.
 
-> **Keep this repository private.** It holds client names and how each client's work is checked. Share it only with team members.
+## Other ways to install
 
-## Install (each editor, once)
-
-**One click (Windows):** send Jerome your GitHub username so he can give you access. Then put `Install NewGen Video Editor.cmd` and `install.ps1` in one folder and double-click the `.cmd`. It:
+**One click (Windows):** put `Install NewGen Video Editor.cmd` and `install.ps1` in one folder and double-click the `.cmd`. It:
 - checks Node.js 22+, ffmpeg, the GitHub CLI and Chrome, and installs the missing ones with winget after one yes;
 - signs you in to GitHub in the browser;
 - installs the plugin, or updates it if you already have it.
@@ -21,15 +36,14 @@ A Claude Code plugin for the ProVision video team. It adds the **NewGen Video Ed
 Run it again any time to update. `install.ps1 -DryRun` only checks and changes nothing.
 
 **By hand:**
-1. Get access to the private GitHub repo from Jerome, and sign in to GitHub on your PC (`gh auth login`).
-2. In Claude Code, run:
+1. In Claude Code, run:
 
 ```
 /plugin marketplace add jeromemultitude-design/newgen-video-editor
 /plugin install newgen-video-editor@newgen
 ```
 
-3. Restart Claude Code. Start a video job with: "Use the NewGen Video Editor agent for this job."
+2. Restart Claude Code. Start a video job with: "Use the NewGen Video Editor agent for this job."
 
 To get updates later: `/plugin marketplace update newgen`.
 
