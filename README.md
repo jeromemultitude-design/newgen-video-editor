@@ -13,6 +13,14 @@ A Claude Code plugin for the ProVision video team. It adds the **NewGen Video Ed
 
 ## Install (each editor, once)
 
+**One click (Windows):** send Jerome your GitHub username so he can give you access. Then put `Install NewGen Video Editor.cmd` and `install.ps1` in one folder and double-click the `.cmd`. It:
+- checks Node.js 22+, ffmpeg, the GitHub CLI and Chrome, and installs the missing ones with winget after one yes;
+- signs you in to GitHub in the browser;
+- installs the plugin, or updates it if you already have it.
+
+Run it again any time to update. `install.ps1 -DryRun` only checks and changes nothing.
+
+**By hand:**
 1. Get access to the private GitHub repo from Jerome, and sign in to GitHub on your PC (`gh auth login`).
 2. In Claude Code, run:
 
