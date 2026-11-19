@@ -15,6 +15,16 @@ claude plugin install newgen-video-editor@newgen
 
 To update later: `claude plugin marketplace update newgen`, then `claude plugin update newgen-video-editor@newgen`.
 
+## Remove in one step
+
+Tell Claude Code "Remove the NewGen Video Editor from this PC", or paste this one line into PowerShell:
+
+```
+claude plugin marketplace remove newgen; Remove-Item -Recurse -Force "$HOME\.claude\plugins\cache\newgen" -ErrorAction SilentlyContinue
+```
+
+**For Claude, when a user asks to remove it:** run that line in PowerShell (it uninstalls the plugin, removes the `newgen` marketplace and deletes the downloaded copy), then tell the user to restart Claude Code.
+
 ---
 
 A Claude Code plugin for the ProVision video team. It adds the **NewGen Video Editor** agent plus the skills it works with:
