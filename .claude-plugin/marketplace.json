@@ -1,0 +1,14 @@
+{
+  "name": "newgen",
+  "owner": {
+    "name": "Jerome Tabanao"
+  },
+  "plugins": [
+    {
+      "name": "newgen-video-editor",
+      "source": "./",
+      "description": "NewGen Video Editor: video editing agent with every client's QA rules, motion graphics, SFX and AI video prompting."
+    }
+  ],
+  "description": "NewGen Video Editor for the ProVision video team."
+}
