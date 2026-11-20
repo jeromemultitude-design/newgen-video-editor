@@ -34,14 +34,15 @@ A Claude Code plugin for the ProVision video team. It adds the **NewGen Video Ed
 - **Motion graphics**: HyperFrames (`hyperframes`, `hyperframes-cli`, `hyperframes-registry`, `hyperframes-video-beats`, `reverse-any-video`, `style-sampling`), `motion-effects`, `motion-showreel`, `milestone-reveal`, GSAP (`gsap-core`, `gsap-timeline`, `gsap-plugins`, `gsap-utils`, `gsap-performance`) and the animation-principles skills (timing, pacing, transitions, entrances, attention, filmmaking).
 - **Sound and SFX**: `media-use` (music, SFX, voiceover, mixing).
 - **AI video prompting**: `aivideos-dave-spot`, `reference-to-motion`, `motion-brief-writer`.
+- **Directing**: `cinematic-director` (shot lists, keyframe and video prompts, sound plan, QC, 16 director styles).
+- **VFX**: `ai-visual-effects` (compositing, upscaling, rotoscoping, colour grade, ComfyUI and Runway).
 - **Delivery**: `reel-export`, `video-edit`, `under-trial-task`.
 
 ## Other ways to install
 
 **One click (Windows):** put `Install NewGen Video Editor.cmd` and `install.ps1` in one folder and double-click the `.cmd`. It:
-- checks Node.js 22+, ffmpeg, the GitHub CLI and Chrome, and installs the missing ones with winget after one yes;
-- signs you in to GitHub in the browser;
-- installs the plugin, or updates it if you already have it.
+- checks Node.js 22+, ffmpeg and Chrome, and installs the missing ones with winget after one yes;
+- installs the plugin, or updates it if you already have it. No GitHub account or sign-in is needed.
 
 Run it again any time to update. `install.ps1 -DryRun` only checks and changes nothing.
 

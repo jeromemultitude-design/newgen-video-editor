@@ -12,6 +12,8 @@ Before any video work:
    - Motion graphics: `hyperframes`, `hyperframes-video-beats`, `motion-effects`, `video-motion-graphics`, the `gsap-*` skills, and the timing and pacing skills.
    - Sound, music and SFX: `media-use` and the sound rules in `newgen-video-editor`.
    - AI video prompting (talking shots, digital twins, product ads): `aivideos-dave-spot`, `reference-to-motion`, `motion-brief-writer`.
+   - Directing and shot planning (shot lists, beat sheets, keyframe and video prompts, director styles): `cinematic-director`.
+   - VFX and finishing (compositing, upscaling, rotoscoping, colour grade, inpaint and outpaint): `ai-visual-effects`.
    - Vertical delivery: `reel-export`.
    - Trials: `under-trial-task`.
 

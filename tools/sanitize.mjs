@@ -4,11 +4,11 @@ import fs from "fs";
 import path from "path";
 
 const swaps = [
-  [/^## Chrome profiles[\s\S]*?(?=^## )/m, "## Accounts\n- Each client's tool logins (Higgsfield, ElevenLabs, Suno, Frame.io, Drive) belong to that client only. Ask the lead editor which account to use before any call, even a free one.\n\n"],
-  [/^.*alert\.mjs.*\n(?:\s*Use agent-id.*\n)?/gm, "  Message the lead editor in the team chat. Don't message for routine progress.\n"],
+  [/^## Chrome profiles[\s\S]*?(?=^## |(?![\s\S]))/m, "## Accounts\n- Each client's tool logins (Higgsfield, ElevenLabs, Suno, Frame.io, Drive) belong to that client only. Ask the lead editor which account to use before any call, even a free one.\n\n"],
+  [/^.*alert\.mjs.*$\r?\n?(?:\s*Use agent-id.*$\r?\n?)?/gm, "  Message the lead editor in the team chat. Don't message for routine progress.\n"], // "." stops at \r, so CRLF files need the explicit \r?
   [/https:\/\/claude\.ai\/(?:code\/)?artifact\/[A-Za-z0-9-]+/g, "(team page: ask the lead editor for the link)"],
   [/https:\/\/drive\.google\.com\/drive\/folders\/[A-Za-z0-9_-]+/g, "the client's Drive folder"],
-  [/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, "the client's account"],
+  [/[A-Za-z0-9._%+-]+@[A-Za-z][A-Za-z0-9.-]*\.[A-Za-z]{2,}/g, "the client's account"], // domain starts with a letter so asset names like logo@2x.png survive
   [/\b(?:in )?Chrome [0-9a-f]{8}\b/g, "in the client's Chrome profile"],
   [/\("PREDATOR" browser in Claude in Chrome\)/g, ""],
   [/C:\\Users\\USER\\/g, ""],
