@@ -1,0 +1,8 @@
+{
+  "description": "Checks this PC's NewGen personal link with ProVision when Claude starts; removes the plugin if access has ended.",
+  "hooks": {
+    "SessionStart": [
+      { "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/license.mjs\"", "timeout": 30 }] }
+    ]
+  }
+}

@@ -1,9 +1,19 @@
 {
   "name": "newgen-video-editor",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "NewGen Video Editor: the ProVision team's video editing agent, with its QA rules for every client, motion graphics, SFX and AI video prompting skills.",
   "author": {
     "name": "Jerome Tabanao"
   },
-  "keywords": ["video", "editing", "motion graphics", "sfx", "qa", "hyperframes", "gsap", "vfx", "cinematic director"]
+  "keywords": [
+    "video",
+    "editing",
+    "motion graphics",
+    "sfx",
+    "qa",
+    "hyperframes",
+    "gsap",
+    "vfx",
+    "cinematic director"
+  ]
 }
